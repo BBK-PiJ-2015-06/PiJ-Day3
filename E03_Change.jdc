@@ -1,6 +1,6 @@
-print("Please insert the cost of item (££.pp): ");
+print("Please insert the cost of item: ");
 double cost = readDouble();
-print("Please insert the amount of money handed over (££.pp): ");
+print("Please insert the amount of money handed over: ");
 double paid = readDouble();
 double change = paid - cost;
 println("Total change: " + change);
@@ -16,11 +16,29 @@ int fivepence = 0;
 int twopence = 0;
 int onepence = 0;
 
-for(change = change; change >= 50.00; change = change - 50) {
+for(change = change; change >= 50.00; change = change - 50.00) {
     fifty = fifty + 1;
+}
+for(change = change; change >= 20.00; change = change - 20.00) {
+    twenty = twenty + 1;
+}
+for(change = change; change >= 10.00; change = change - 10.00) {
+    ten = ten + 1;
+}
+for(change = change; change >= 5.00; change = change - 5.00) {
+    five = five + 1;
 }
 
 println("Change required: ");
 if (fifty > 0) {
-	println("x" + fifty + " £50");
+	println("x" + fifty + " £50 note(s)");
+}
+if (twenty > 0) {
+	println("x" + twenty + " £20 note(s)");
+}
+if (ten > 0) {
+	println("x" + ten + " £10 note(s)");
+}
+if (five > 0) {
+	println("x" + five + " £5 note(s)");
 }
