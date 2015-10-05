@@ -1,4 +1,0 @@
-print("Please type in a number: ");
-double num1 = readDouble();
-print("Please type in another number: ");
-double num2 = readDouble();
