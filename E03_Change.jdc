@@ -1,0 +1,6 @@
+print("Please insert the cost of item (££.pp): ");
+double cost = readDouble();
+print("Please insert the amount of money handed over (££.pp): ");
+double paid = readDouble();
+double change = paid - cost;
+println(change);
