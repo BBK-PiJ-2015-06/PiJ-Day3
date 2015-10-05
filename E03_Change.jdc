@@ -4,41 +4,92 @@ print("Please insert the amount of money handed over: ");
 double paid = readDouble();
 double change = paid - cost;
 println("Total change: " + change);
-
-int fifty = 0;
-int twenty = 0;
-int ten = 0;
-int five = 0;
-int fiftypence = 0;
-int twentypence = 0;
-int tenpence = 0;
-int fivepence = 0;
-int twopence = 0;
-int onepence = 0;
-
-for(change = change; change >= 50.00; change = change - 50.00) {
-    fifty = fifty + 1;
-}
-for(change = change; change >= 20.00; change = change - 20.00) {
-    twenty = twenty + 1;
-}
-for(change = change; change >= 10.00; change = change - 10.00) {
-    ten = ten + 1;
-}
-for(change = change; change >= 5.00; change = change - 5.00) {
-    five = five + 1;
-}
-
-println("Change required: ");
-if (fifty > 0) {
-	println("x" + fifty + " £50 note(s)");
-}
-if (twenty > 0) {
-	println("x" + twenty + " £20 note(s)");
-}
-if (ten > 0) {
-	println("x" + ten + " £10 note(s)");
-}
-if (five > 0) {
-	println("x" + five + " £5 note(s)");
+if (change <= 0) {
+    println("No change required");
+} else {
+    int fifty = 0;
+    int twenty = 0; 
+    int ten = 0;
+    int five = 0;
+    int two = 0;
+    int one = 0;
+    int fiftypence = 0;
+    int twentypence = 0;
+    int tenpence = 0;
+    int fivepence = 0;
+    int twopence = 0;
+    int onepence = 0;
+    for(change = change; change >= 50.00; change = change - 50.00) {
+        fifty = fifty + 1;
+    }
+    for(change = change; change >= 20.00; change = change - 20.00) {
+        twenty = twenty + 1;
+    }
+    for(change = change; change >= 10.00; change = change - 10.00) {
+        ten = ten + 1;
+    }
+    for(change = change; change >= 5.00; change = change - 5.00) {
+        five = five + 1;
+    }
+    for(change = change; change >= 2.00; change = change - 2.00) {
+        two = two + 1;
+    }
+    for(change = change; change >= 1.00; change = change - 1.00) {
+        one = one + 1;
+    }
+    for(change = change; change >= 0.50; change = change - 0.50) {
+        fiftypence = fiftypence + 1;
+    }
+    for(change = change; change >= 0.20; change = change - 0.20) {
+        twentypence = twentypence + 1;
+    }
+    for(change = change; change >= 0.10; change = change - 0.10) {
+        tenpence = tenpence + 1;
+    }
+    for(change = change; change >= 0.05; change = change - 0.05) {
+        fivepence = fivepence + 1;
+    }
+    for(change = change; change >= 0.02; change = change - 0.02) {
+        twopence = twopence + 1;
+    }
+    for(change = change; change >= 0.01; change = change - 0.01) {
+        onepence = onepence + 1;
+    }
+    println("Change required: ");
+    if (fifty > 0) {
+	    println("x" + fifty + " £50 note(s)");
+    }
+    if (twenty > 0) {
+	    println("x" + twenty + " £20 note(s)");
+    }
+    if (ten > 0) {
+	    println("x" + ten + " £10 note(s)");
+    }
+    if (five > 0) {
+	    println("x" + five + " £5 note(s)");
+    }
+    if (two > 0) {
+	    println("x" + two + " £2 coin(s)");
+    }
+    if (one > 0) {
+	    println("x" + one + " £1 coin(s)");
+    }
+    if (fiftypence > 0) {
+	    println("x" + fiftypence + " 50p coin(s)");
+    }
+    if (twentypence > 0) {
+    	println("x" + twentypence + " 20p coin(s)");
+    }
+    if (tenpence > 0) {
+	    println("x" + tenpence + " 10p coin(s)");
+    }
+    if (fivepence > 0) {
+	    println("x" + fivepence + " 5p coin(s)");
+    }
+    if (twopence > 0) {
+	    println("x" + twopence + " 2p coin(s)");
+    }
+    if (onepence > 0) {
+	    println("x" + onepence + " 1p coin(s)");
+    }
 }
