@@ -18,10 +18,13 @@ switch (choice) {
 		break;
 	case 2:
 	    println(num1 + " - " + num2 + " = " + (num1-num2));
+		break;
 	case 3:
 	    println(num1 + " x " + num2 + " = " + (num1*num2));
+		break;
 	case 4:
 	    println(num1 + " / " + num2 + " = " + (num1/num2));
+		break;
 	default:
 	    break;
 }
