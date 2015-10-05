@@ -3,4 +3,24 @@ double cost = readDouble();
 print("Please insert the amount of money handed over (££.pp): ");
 double paid = readDouble();
 double change = paid - cost;
-println(change);
+println("Total change: " + change);
+
+int fifty = 0;
+int twenty = 0;
+int ten = 0;
+int five = 0;
+int fiftypence = 0;
+int twentypence = 0;
+int tenpence = 0;
+int fivepence = 0;
+int twopence = 0;
+int onepence = 0;
+
+for(change = change; change >= 50.00; change = change - 50) {
+    fifty = fifty + 1;
+}
+
+println("Change required: ");
+if (fifty > 0) {
+	println("x" + fifty + " £50");
+}
