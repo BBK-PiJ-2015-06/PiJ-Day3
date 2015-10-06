@@ -3,7 +3,6 @@ double cost = readDouble();
 print("Please insert the amount of money handed over: ");
 double paid = readDouble();
 double change = paid - cost;
-println("Total change: " + change);
 if (change <= 0) {
     println("No change required");
 } else {
@@ -49,10 +48,10 @@ if (change <= 0) {
     for(change = change; change >= 0.05; change = change - 0.05) {
         fivepence = fivepence + 1;
     }
-    for(change = change; change >= 0.02; change = change - 0.02) {
+    for(change = change; change >= 0.019; change = change - 0.02) {
         twopence = twopence + 1;
     }
-    for(change = change; change >= 0.01; change = change - 0.01) {
+    for(change = change; change >= 0.009; change = change - 0.01) {
         onepence = onepence + 1;
     }
     println("Change required: ");
