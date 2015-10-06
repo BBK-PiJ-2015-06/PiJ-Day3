@@ -1,0 +1,4 @@
+println("Please input a line of text: ");
+String str = readLine();
+int i = str.length();
+println(i);
