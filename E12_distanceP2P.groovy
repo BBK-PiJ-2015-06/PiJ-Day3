@@ -34,19 +34,17 @@ double distanceP2P3 = Math.abs(point3.x - point2.x) + Math.abs(point3.y - point2
 if (distanceP1P2 == distanceP1P3 && distanceP1P3 == distanceP2P3) {
 	println "All three points are equidistant.";
 } else {
+	println "The following relationships are the closest: ";
 	if (distanceP1P2 <= distanceP1P3 && distanceP1P2 <= distanceP2P3) {
-		println "Points 1 and 2 are closest.";
+		println "Points 1 and 2.";
 	} 
 	if (distanceP1P3 <= distanceP1P2 && distanceP1P3 <= distanceP2P3) {
-		println "Points 1 and 3 are closest.";
+		println "Points 1 and 3.";
 	}
 	if (distanceP2P3 <= distanceP1P2 && distanceP2P3 <= distanceP1P3) {
-		println "Points 2 and 3 are closest.";
+		println "Points 2 and 3.";
 	}
 }
-println "distanceP1P2: " + distanceP1P2
-println "distanceP1P3: " + distanceP1P3
-println "distanceP2P3: " + distanceP2P3
 class Point {
 	double x;
 	double y;
