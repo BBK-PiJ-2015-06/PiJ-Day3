@@ -11,6 +11,10 @@ if (s.substring(0,1) == "-") {
 	num = s.substring(0,1);
 	count = 1
 }
+
+// Takes input from user (see above) and outputs string of numbers.
+// Removes the commas and decimal point.
+// Makes a note using decimalpos as to where the decimal point was located.
 int decimalpos = s.length();
 int commacount = 0;
 for (count; count < s.length(); count++) {
@@ -23,6 +27,9 @@ for (count; count < s.length(); count++) {
 		} 
 	}
 }
+
+// Works out how many decimal places there should be in the final output.
+// Also converts num into an integer and divides by 2.
 int decimalplaces = s.length() - decimalpos
 if (decimalplaces > 0) {
 	decimalplaces = decimalplaces - 1;
@@ -38,6 +45,8 @@ double output = number;
 for (decimalplaces; decimalplaces > 0; decimalplaces = decimalplaces - 1) {
 	output = output / 10;
 }
+
+// Testing for negative number and adjusting output accordingly.
 if (negative) {
 	output = output * -1;
 }
