@@ -22,4 +22,14 @@ for (count; count < s.length(); count++) {
 		} 
 	}
 }
-println num 
+int number = Integer.parseInt(num);
+if (number%2 == 1) {
+	number = (((number - 1) / 2) * 10) + 5;	
+} else {
+	number = number / 2;
+}
+String output = Integer.toString(number) 
+int outputlength = output.length()
+println output
+println outputlength
+println decimalpos
