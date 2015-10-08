@@ -24,9 +24,9 @@ Point point3 = new Point();
 print "Please input x coordinate of Point 3: ";
 s = System.console().readLine();
 point3.x = Double.parseDouble(s);
-print "Please input x coordinate of Point 3: ";
+print "Please input y coordinate of Point 3: ";
 s = System.console().readLine();
-point3.x = Double.parseDouble(s);
+point3.y = Double.parseDouble(s);
 
 //Tests whether point3 is inside myRectangle.
 boolean inside = true;
@@ -36,10 +36,10 @@ if (point3.x < myRectangle.upLeft.x && point3.x < myRectangle.downRight.x) {
 if (point3.x > myRectangle.upLeft.x && point3.x > myRectangle.downRight.x) {
 	inside = false;
 }
-if (point3.y < myRectangle.upLeft.y && point3.x < myRectangle.downRight.y) {
+if (point3.y < myRectangle.upLeft.y && point3.y < myRectangle.downRight.y) {
 	inside = false;
 }
-if (point3.x < myRectangle.upLeft.x && point3.x < myRectangle.downRight.x) {
+if (point3.y > myRectangle.upLeft.y && point3.y > myRectangle.downRight.y) {
 	inside = false;
 }
 
