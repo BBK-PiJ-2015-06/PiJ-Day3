@@ -10,15 +10,29 @@ for (int count = 1; count < l; count++) {
 		operand = c;
 		gap = count
 	} else if (c == ' ') {
-		break;
+		numbers = numbers + c;
 	} else {
 		numbers = numbers + c;
 	}
 }
-String firstnum = numbers.substring(0,gap);
-String secondnum = numbers.substring(gap);
-double num1 = Double.parseDouble(firstnum);
-double num2 = Double.parseDouble(secondnum);
+String num1gaps = numbers.substring(0,gap);
+String num2gaps = numbers.substring(gap); 
+String strnum1 = "0";
+String strnum2 = "0";
+for (int count = 0; count < num1gaps.length(); count++) {
+	char c = num1gaps.charAt(count);
+	if (c != ' ') {
+		strnum1 = strnum1 + c;
+	}
+}
+for (int count = 0; count < num2gaps.length(); count++) {
+	char c = num2gaps.charAt(count);
+	if (c != ' ') {
+		strnum2 = strnum2 + c;
+	}
+}
+double num1 = Double.parseDouble(strnum1);
+double num2 = Double.parseDouble(strnum2);
 double output = 0;
 switch (operand) {
 case '+':
