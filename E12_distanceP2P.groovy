@@ -25,6 +25,10 @@ s = System.console().readLine();
 point3.y = Double.parseDouble(s);
 println "Point 3: " + point3.x + ", " + point3.y
 
+double distanceP1P2 = Math.abs(point2.x - point1.x) + Math.abs(point2.y - point1.y)
+double distanceP1P3 = Math.abs(point3.x - point1.x) + Math.abs(point3.y - point1.y)
+double distanceP2P3 = Math.abs(point3.x - point2.x) + Math.abs(point3.y - point2.y)
+
 class Point {
 	double x;
 	double y;
