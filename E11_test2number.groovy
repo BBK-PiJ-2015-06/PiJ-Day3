@@ -38,4 +38,7 @@ double output = number;
 for (decimalplaces; decimalplaces > 0; decimalplaces = decimalplaces - 1) {
 	output = output / 10;
 }
+if (negative) {
+	output = output * -1;
+}
 println output
