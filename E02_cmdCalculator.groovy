@@ -50,8 +50,9 @@ case '/':
 default:
 	break;
 }
-int outputApprox = Integer.parseInt(output);
-if (outputApprox == output) {
-	output = outputApprox;
+int outputApprox = (int)output;
+if (Math.abs(outputApprox - output) < 10E-6 ) {
+	println num1 + " " + operand + " " + num2 + " = " + outputApprox;
+} else {
+	println num1 + " " + operand + " " + num2 + " = " + output;
 }
-println num1 + " " + operand + " " + num2 + " = " + output;
