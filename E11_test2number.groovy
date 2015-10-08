@@ -41,13 +41,15 @@ if (number%2 == 0) {
 	number = (((number - 1)/2) * 10) + 5;
 	decimalplaces ++;
 }
-double output = number;
-for (decimalplaces; decimalplaces > 0; decimalplaces = decimalplaces - 1) {
-	output = output / 10;
+s = Integer.toString(number)
+String output = s
+int d = s.length() - decimalplaces;
+if (decimalplaces > 0) {
+	output = s.substring(0,d) + "." + s.substring(d)
 }
 
 // Testing for negative number and adjusting output accordingly.
 if (negative) {
-	output = output * -1;
+	output = "-" + output;
 }
 println output
