@@ -22,7 +22,7 @@ rectangle1.downRight = point2;
 //Specifies points 3 and 4
 Point point3 = new Point();
 print "Please input x coordinate of Point 3: ";
-String s = System.console().readLine();
+s = System.console().readLine();
 point3.x = Double.parseDouble(s);
 print "Please input y coordinate of Point 3: ";
 s = System.console().readLine();
