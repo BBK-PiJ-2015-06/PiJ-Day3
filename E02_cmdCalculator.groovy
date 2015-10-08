@@ -50,4 +50,8 @@ case '/':
 default:
 	break;
 }
+int outputApprox = Integer.parseInt(output);
+if (outputApprox == output) {
+	output = outputApprox;
+}
 println num1 + " " + operand + " " + num2 + " = " + output;
