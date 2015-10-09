@@ -7,8 +7,8 @@ for (int s2Count = 0; s2Count < s2.length(); s2Count++) {
 	boolean found = true;
 	for (int s1Count = 0; s1Count < s1.length(); s1Count++) {
 		if (s1Count + s2Count >= s2.length()) {
-			s1Count = s1.length()
 			found = false;
+			break;
 		} else {
 			char c2 = s2.charAt(s1Count + s2Count);
 			char c1 = s1.charAt(s1Count);
