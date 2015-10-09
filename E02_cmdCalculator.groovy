@@ -13,8 +13,12 @@ for (int count = 1; count < l; count++) {
 		numbers = numbers + c;
 	}
 }
+//separates out the operand and string of numbers (and spaces).
+
 String num1gaps = numbers.substring(0,gap);
 String num2gaps = numbers.substring(gap); 
+//splits the string of numbers into two strings at the point where the operand was located.
+
 String strnum1 = "0";
 String strnum2 = "0";
 for (int count = 0; count < num1gaps.length(); count++) {
@@ -29,6 +33,8 @@ for (int count = 0; count < num2gaps.length(); count++) {
 		strnum2 = strnum2 + c;
 	}
 }
+//removes the " " gaps from each string.
+
 double num1 = Double.parseDouble(strnum1);
 double num2 = Double.parseDouble(strnum2);
 double output = 0;
@@ -48,9 +54,12 @@ case '/':
 default:
 	break;
 }
+//converts each string into a double variable and performs the operand on the two numbers.
+
 int outputApprox = (int)output;
 if (Math.abs(outputApprox - output) < 10E-6 ) {
 	println num1 + " " + operand + " " + num2 + " = " + outputApprox;
 } else {
 	println num1 + " " + operand + " " + num2 + " = " + output;
 }
+//adjusts the output of the program (double or integer)depending on the accuracy required of the result.
