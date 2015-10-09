@@ -14,6 +14,9 @@ while (!finished) {
 			count = lettersUsed.length();
 		}
 	}
+	//tests whether letter input from user has been used before
+	//and terminates the program if this is the case
+	
 	if (finished) {
 		break;
 	} else {
