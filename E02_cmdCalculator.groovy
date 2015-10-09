@@ -9,8 +9,6 @@ for (int count = 1; count < l; count++) {
 	if (c == '+' || c == '-' || c == '*' || c == '/') {
 		operand = c;
 		gap = count
-	} else if (c == ' ') {
-		numbers = numbers + c;
 	} else {
 		numbers = numbers + c;
 	}
